@@ -1,4 +1,4 @@
-{% set version = '2.0.0.2' %}
+{% set version = "2.1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/h5lite_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/h5lite/h5lite_{{ version }}.tar.gz
-  sha256: db1d1a0ce77626f1f3dc6f81141ca61559d6cacb30ce16aa9e75e41ee3b71c59
+  sha256: 7e886d3f266ac8f83fc301f51867434bf8c0dd388a55d900e6535c114e3c62f2
 
 build:
   number: 0
@@ -48,12 +48,8 @@ about:
   home: https://cmmr.github.io/h5lite
   dev_url: https://github.com/cmmr/h5lite
   license: MIT
-  summary: A user-friendly interface for the Hierarchical Data Format 5 ('HDF5') library designed
-    to "just work." It bundles the necessary system libraries to ensure easy installation
-    on all platforms. Features smart defaults that automatically map R objects (vectors,
-    matrices, data frames) to efficient 'HDF5' types, removing the need to manage low-level
-    details like dataspaces or property lists. Uses the 'HDF5' library developed by
-    The HDF Group <https://www.hdfgroup.org/>.
+  summary: A user-friendly interface for the Hierarchical Data Format 5 ('HDF5') library designed to "just work." It bundles the necessary system libraries to ensure easy installation on all platforms. Features smart defaults that automatically map R objects (vectors, matrices, data frames) to efficient 'HDF5' types, 
+    removing the need to manage low-level details like dataspaces or property lists. Uses the 'HDF5' library developed by The HDF Group <https://www.hdfgroup.org/>.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
