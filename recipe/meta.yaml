@@ -1,4 +1,4 @@
-{% set version = "2.1.1.0" %}
+{% set version = "2.1.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/h5lite_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/h5lite/h5lite_{{ version }}.tar.gz
-  sha256: 7e886d3f266ac8f83fc301f51867434bf8c0dd388a55d900e6535c114e3c62f2
+  sha256: 7b989e0517e27b0c9167deba11b51975bf6461ed103a461175aec111bff7c9ba
 
 build:
   number: 0
